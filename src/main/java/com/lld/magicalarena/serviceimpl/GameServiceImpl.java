@@ -28,7 +28,7 @@ public class GameServiceImpl implements GameService {
         return result.toString();
     }
 
-    private void attack(Player attacker, Player defender, StringBuilder result) {
+    void attack(Player attacker, Player defender, StringBuilder result) {
     	// rolling the  dice to determine attack and defense values
         int attackRoll = DiceRoller.rollDie();
         int defenseRoll = DiceRoller.rollDie();
